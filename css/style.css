@@ -132,10 +132,17 @@ nav ul{
     align-items: center;
 }
 
-.page-header .wrapper > * {
+.page-header .wrapper > *,
+.page-footer .wrapper > * {
     flex: 1;
     display: flex;
     justify-content: center;
+}
+
+
+.page-footer .footer-nav ul{
+    display: flex;
+    justify-content: space-around;   
 }
 
 .page-header .nav-toggle{ display: none;}
@@ -241,6 +248,7 @@ article .meta {
     color: #999;
     font-size: 0.8rem;
     margin: 18px 0;
+    line-height: 1.45;
 }
 
 .meta span::after,
