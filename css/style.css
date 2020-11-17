@@ -94,7 +94,7 @@ table {
     box-sizing: border-box;
 }
 
-body{
+html{
     font-size:16px;
     font-family: Roboto;
 }
@@ -138,6 +138,8 @@ nav ul{
     justify-content: center;
 }
 
+.page-header .nav-toggle{ display: none;}
+
 .page-header li a {
     text-transform: uppercase;
     text-decoration: none;
@@ -150,11 +152,6 @@ nav ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.page-header .wrapper > *,
-.page-footer .wrapper > *{
-    width: calc(100%/3);
 }
 
 .social-links{
@@ -214,7 +211,7 @@ main h2{
 }
 
 .article-left{
-    width:30%;
+    flex: 1 30%;
 }
 
 .article-left img{
@@ -223,7 +220,7 @@ main h2{
 }
 
 .article-right{
-    width:70%;
+    flex: 1 70%;
     display: flex;
     flex-direction: column;
     padding-left: 25px;
@@ -234,6 +231,7 @@ main article h3{
     font-family: Proxima;
     font-weight: 300;
     font-size: 1.8rem;
+    line-height: 1.3;
     color:#333;
 }
 
